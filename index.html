@@ -29,11 +29,206 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              button_color: "#B68C5A",
+              header_color: "#414040",
+              para_color1: "#707070",
+              para_color2: "#F3F3F3",
+              foot_color: "#CFCFCF",
             },
           },
         },
       };
     </script>
+
+    <!-- Custom CSS -->
+    <style>
+      body{
+        font-family: font-family: 'Poppins', sans-serif;;
+      }
+      h1,h2,h3,h4,h5,h6{
+        font-family: 'EB Garamond', serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header class="mx-4 lg:mx-32">
+      <!-- NAVBAR STARTS -->
+
+      <nav class="text-para_color1">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Services</a>
+                  <ul class="p-2 bg-slate-100">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a>Cases</a>
+                  <ul class="p-2 bg-slate-100">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a>Blog</a>
+                  <ul class="p-2 bg-slate-100">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a>Contact Us</a>
+                  <ul class="p-2 bg-slate-100">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl"
+              ><img src="images/logo2.png" alt=""
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li tabindex="0">
+                <details>
+                  <summary>Services</summary>
+                  <ul class="p-2 bg-slate-100">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+
+              <li tabindex="0">
+                <details>
+                  <summary>Cases</summary>
+                  <ul class="p-2 bg-slate-100">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+
+              <li tabindex="0">
+                <details>
+                  <summary>Blog</summary>
+                  <ul class="p-2 bg-slate-100">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+
+              <li tabindex="0">
+                <details>
+                  <summary>Contact Us</summary>
+                  <ul class="p-2 bg-slate-100">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn hover:bg-yellow-700 capitalize bg-button_color text-white sm:px-6 lg:text-lg"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR ENDS -->
+
+      <!-- BANNER SECTION STARTS -->
+      <section class="my-12 lg:my-20">
+        <div
+          class="hero w-full max-h-max"
+          style="
+            background-image: url(images/banner.png),
+              linear-gradient(180deg, #11111100, #111111);
+            background-blend-mode: overlay;
+          "
+        >
+          <div class="hero-overlay bg-opacity-10"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="">
+              <h1 class="mt-32 mb-5 text-5xl xl:text-7xl font-bold text-white">
+                We Provide Effective <br />
+                Legal Solutions
+              </h1>
+              <p class="my-8 text-para_color2">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority <br />
+                have suffered alteration in some form, by injected humour.
+              </p>
+              <div class="mb-32 space-x-3">
+                <input
+                  type="text"
+                  placeholder="Search your services"
+                  class="input input-bordered w-full max-w-xs"
+                />
+                <button
+                  class="btn hover:bg-yellow-700 capitalize bg-button_color text-white sm:px-7 border-0 mt-6 lg:text-lg"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BANNER SECTION ENDS -->
+    </header>
+
+    <main>
+      <!-- The Legal Practice Area SECTION STARTS -->
+      <section class="my-12 lg:my-20"></section>
+      <!-- The Legal Practice Area SECTION ENDS -->
+
+      <!-- What Our Client Say SECTION STARTS -->
+      <section class="my-12 lg:my-20"></section>
+      <!-- What Our Client Say SECTION ENDS -->
+
+      <!-- FAQ SECTION STARTS -->
+      <section class="my-12 lg:my-20"></section>
+      <!-- FAQ SECTION ENDS -->
+
+      <!-- CONTACT SECTION STARTS -->
+      <section class="my-12 lg:my-20"></section>
+      <!-- CONTACT SECTION ENDS -->
+    </main>
+
+    <footer>
+      <!-- FOOTER SECTION STARTS -->
+      <!-- FOOTER SECTION ENDS -->
+    </footer>
+  </body>
 </html>
